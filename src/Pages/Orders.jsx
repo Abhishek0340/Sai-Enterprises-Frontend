@@ -15,7 +15,7 @@ const Orders = () => {
 
     const fetchOrders = async () => {
       try {
-        const res = await axios.get(`${import.meta.env.BACKEND_URL}/orders/${userEmail}`);
+        const res = await axios.get(`https://sai-enterprises-backend.onrender.com/orders/${userEmail}`);
         setOrders(res.data);
       } catch (err) {
         console.error("Error fetching orders:", err);

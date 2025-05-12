@@ -18,7 +18,7 @@ export default function ProductDetails() {
 
     const { dispatch: wishlistDispatch } = useWishlist();
     useEffect(() => {
-        axios.get(`${import.meta.env.BACKEND_URL}/products/${id}`)
+        axios.get(`https://sai-enterprises-backend.onrender.com/products/${id}`)
             .then((res) => {
                 setProduct(res.data);
                 if (res.data.images && res.data.images.length > 0) {

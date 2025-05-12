@@ -19,7 +19,7 @@ const ContactUs = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${import.meta.env.BACKEND_URL}/contact`, formData);
+      const response = await axios.post(`https://sai-enterprises-backend.onrender.com/contact`, formData);
       alert("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {

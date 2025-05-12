@@ -14,7 +14,7 @@ const ForgotPassword = () => {
   const sendOtp = (e) => {
     e.preventDefault();
     axios
-      .post(`${import.meta.env.BACKEND_URL}/send-reset-otp`, { email })
+      .post(`https://sai-enterprises-backend.onrender.com/send-reset-otp`, { email })
       .then((res) => {
         if (res.data.success) {
           setStep(2);
