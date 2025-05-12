@@ -31,7 +31,9 @@ const Footer = () => {
 
           {/* Company */}
           <div className="text-center">
-            <h3 className="text-white font-semibold mb-3">Company</h3>
+            <h3 className="text-white font-semibold mb-3">
+              <Link to='/adminlogin'>Company</Link>
+            </h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/about_us" className="hover:text-white transition">About Us</Link></li>
               <li><Link to="/contact_us" className="hover:text-white transition">Contact</Link></li>
