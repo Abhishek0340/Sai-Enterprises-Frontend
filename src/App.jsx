@@ -36,6 +36,7 @@ import { WishlistProvider } from './Context/WishlistContext'
 import NotFound from './Component/NotFound';
 import Transactions from './Admin_Compo/Transactions';
 import AdminLogin from './Admin_Compo/AdminLogin'
+import AdminSignup from './Admin_Compo/AdminSignup'
 import ForgotPassword from './User/ForgotPassword'
 import UserProtectedRoute from './Context/UserProtectedRoute'
 
@@ -86,6 +87,7 @@ export function App() {
 
                 {/* Admin Auth Route */}
                 <Route path='/adminlogin' element={<AdminLogin />} />
+                <Route path='/adminsignup' element={<AdminSignup />} />
                 <Route path='/dashboard' element={
                   <AdminProtectedRoute>
                     <AdminDashboard />
