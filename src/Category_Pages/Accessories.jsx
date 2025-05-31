@@ -20,7 +20,7 @@ export default function Accessories() {
         const res = await axios.get(`https://sai-enterprises-backend.onrender.com/products`);
 
         
-        const electronicsProducts = res.data.filter(product => product.category === "Accessories");
+        const electronicsProducts = res.data.filter(product => product.category === "Accesories");
 
         
         const groupedCategories = {};

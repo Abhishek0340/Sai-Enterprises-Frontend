@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -9,7 +7,6 @@ import Navbar from "../Component/Navbar";
 const Signup = () => {
   const [step, setStep] = useState(1); 
   const [otp, setOtp] = useState("");
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");

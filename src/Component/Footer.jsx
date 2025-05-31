@@ -11,7 +11,8 @@ const Footer = () => {
 
           {/* Logo & About */}
           <div className="text-center">
-            <img src="https://i.ibb.co/bMMP5YzD/main-logo.png" alt="Logo" className="w-16 block m-auto h-16 mb-4 filter invert brightness-0" />
+            <img src="https://i.ibb.co/bMMP5YzD/main-logo.png" alt="Logo" 
+            className="w-16 block m-auto h-16 mb-4 filter invert brightness-0" />
             <h2 className="text-white text-xl font-semibold">Sai Enterprises</h2>
             <p className="text-sm mt-2">
               Your trusted online shop for top-quality electronics and fashion since 2024.
@@ -22,10 +23,19 @@ const Footer = () => {
           <div className="text-center">
             <h3 className="text-white font-semibold mb-3">Explore</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/products" className="hover:text-white transition">All Products</Link></li>
-              <li><Link to="/mobile" className="hover:text-white transition">Mobiles</Link></li>
-              <li><Link to="/electronics" className="hover:text-white transition">Electronics</Link></li>
-              <li><Link to="/categories/fashion" className="hover:text-white transition">Fashion</Link></li>
+            
+              <li>
+                <Link to="/mobile" 
+                className="hover:text-white transition">Mobiles</Link>
+              </li>
+              <li>
+                <Link to="/audioequipments" 
+                className="hover:text-white transition">Audio Equipments</Link>
+              </li>
+              <li>
+                <Link to="/accessories" 
+                className="hover:text-white transition">Accessories</Link>
+              </li>
             </ul>
           </div>
 

@@ -52,11 +52,10 @@ export default function Navbar() {
 
       {/* Right side controls */}
       <div className="flex gap-4 items-center">
-        {/* Search Input - Visible only on medium screens and larger */}
         <input
           type="text"
           placeholder="Search Product..."
-          className="input input-bordered w-24 md:w-auto hidden md:block"
+          className="input input-bordered w-24 md:w-auto hidden "
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />

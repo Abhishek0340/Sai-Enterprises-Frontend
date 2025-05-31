@@ -32,7 +32,7 @@ export default function AdminLogin() {
       
       <div className="h-screen w-screen overflow-x-hidden flex items-center justify-center bg-cover bg-center px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl border-gray-300 p-6 sm:p-8 rounded-2xl shadow-2xl border">
-          <h1 className="text-center font-bold text-3xl sm:text-4xl text-black mb-6">Login</h1>
+          <h1 className="text-center font-bold text-3xl sm:text-4xl text-black mb-6">Admin Login</h1>
           
           {error && (
             <div className="mb-4 p-3 bg-red-100 text-red-700 rounded-lg">

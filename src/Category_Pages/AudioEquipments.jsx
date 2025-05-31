@@ -17,7 +17,7 @@ export default function AudioEquipments() {
       try {
         const res = await axios.get(`https://sai-enterprises-backend.onrender.com/products`);
 
-        const electronicsProducts = res.data.filter(product => product.category === "Audio Equipments");
+        const electronicsProducts = res.data.filter(product => product.category === "Audio");
 
         const groupedCategories = {};
         electronicsProducts.forEach(product => {
