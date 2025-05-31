@@ -67,13 +67,17 @@ export function App() {
                 <Route path="/payment" element={
                   <UserProtectedRoute><PaymentPage /></UserProtectedRoute>
                 } />
+                 <Route path="/checkout" element={
+                  <UserProtectedRoute><CheckOutPage /></UserProtectedRoute>
+                } />
+                
                  <Route path="/orders" element={
                   <UserProtectedRoute><Orders /></UserProtectedRoute>
                 } />
 
                 <Route path="/payment-success" element={<PaymentSuccess />} />
-                <Route path="/checkout" element={<CheckOutPage />} />
-              <Route path='/terms_of_use' element={<TermsOfUse />} />
+                {/* <Route path="/checkout" element={<CheckOutPage />} /> */}
+                <Route path='/terms_of_use' element={<TermsOfUse />} />
                 <Route path='/careers' element={<Careers />} />
                 <Route path='/contact_us' element={<ContactUs />} />
                 <Route path='/about_us' element={<AboutUs />} />
