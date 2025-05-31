@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAdminAuth } from './AdminAuthContext'
+import { Link } from "react-router-dom";
+
 
 export default function AdminLogin() {
   const [email, setEmail] = useState("");
@@ -64,7 +66,10 @@ export default function AdminLogin() {
               Login
             </button>
           </form>
-          
+          <hr />
+
+          <p>Create a new Account ? </p>
+          <Link to='/adminsignup'> Signup</Link>
           
         </div>
       </div>
