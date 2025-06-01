@@ -16,7 +16,7 @@ export default function SmartHomeDevices() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get(`${import.meta.env.BACKEND_URL}/products`);
+        const res = await axios.get(`https://sai-enterprises-backend.onrender.com/products`);
 
 
         const electronicsProducts = res.data.filter(product => product.category === "Smart Home Devices");

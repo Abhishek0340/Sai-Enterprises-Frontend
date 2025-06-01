@@ -28,7 +28,7 @@ const ForgotPassword = () => {
   const resetPassword = (e) => {
     e.preventDefault();
     axios
-      .post(`${import.meta.env.BACKEND_URL}/reset-password`, { email, otp, newPassword })
+      .post("https://sai-enterprises-e-commerce-backend.vercel.app/reset-password", { email, otp, newPassword })
       .then((res) => {
         if (res.data.success) {
           alert("Password reset successful!");
