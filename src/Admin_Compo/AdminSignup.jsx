@@ -1,4 +1,3 @@
-// AdminSignup.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -13,7 +12,7 @@ const AdminSignup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://sai-enterprises-backend.onrender.com/adminsignup', formData);
+      const res = await axios.post(`${import.meta.env.BACKEND_URL}/adminsignup`, formData);
       setMessage(res.data.msg);
       setFormData({ name: '', email: '', password: '' });
     } catch (err) {

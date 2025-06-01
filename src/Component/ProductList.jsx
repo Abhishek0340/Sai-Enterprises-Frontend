@@ -5,7 +5,7 @@ const ProductList = ({ searchQuery }) => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const res = await fetch(`https://sai-enterprises-backend.onrender.com/products?search=${searchQuery}`);
+      const res = await fetch(`${import.meta.env.BACKEND_URL}/products?search=${searchQuery}`);
       const data = await res.json();
       setProducts(data);
     };

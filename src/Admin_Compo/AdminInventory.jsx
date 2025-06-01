@@ -26,7 +26,7 @@ export default function AdminInventory() {
   }, []);
 
   const fetchProducts = async () => {
-    const res = await axios.get(`https://sai-enterprises-backend.onrender.com/products`);
+    const res = await axios.get(`${import.meta.env.BACKEND_URL}/products`);
     setProducts(res.data);
   };
 
@@ -64,11 +64,11 @@ export default function AdminInventory() {
 
     try {
       if (editingProductId) {
-        await axios.put(`https://sai-enterprises-backend.onrender.com/update-product/${editingProductId}`,
+        await axios.put(`${import.meta.env.BACKEND_URL}/update-product/${editingProductId}`,
           newProduct
         );
       } else {
-        await axios.post(`https://sai-enterprises-backend.onrender.com/add-product`, newProduct);
+        await axios.post(`${import.meta.env.BACKEND_URL}/add-product`, newProduct);
       }
       fetchProducts();
       setProduct({
@@ -97,7 +97,7 @@ export default function AdminInventory() {
   };
 
   const handleDelete = async (id) => {
-    await axios.delete(`https://sai-enterprises-backend.onrender.com/delete-product/${id}`);
+    await axios.delete(`${import.meta.env.BACKEND_URL}/delete-product/${id}`);
     fetchProducts();
   };
 

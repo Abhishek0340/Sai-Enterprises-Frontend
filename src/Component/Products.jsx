@@ -12,7 +12,7 @@ export function Products() {
     const { dispatch: wishlistDispatch } = useWishlist();
 
     useEffect(() => {
-        axios.get(`https://sai-enterprises-backend.onrender.com/products`)
+        axios.get(`${import.meta.env.BACKEND_URL}/products`)
             .then((res) => {
                 setProducts(res.data);
                 const groupedCategories = res.data.reduce((acc, product) => {

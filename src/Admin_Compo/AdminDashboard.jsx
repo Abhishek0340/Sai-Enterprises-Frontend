@@ -16,7 +16,7 @@ const AdminDashboard = () => {
     useEffect(() => {
         const fetchSummary = async () => {
             try {
-                const res = await axios.get(`https://sai-enterprises-backend.onrender.com/dashboard-summary`);
+                const res = await axios.get(`${import.meta.env.BACKEND_URL}/dashboard-summary`);
                 setSummaryData({
                     totalRevenue: res.data.totalRevenue,
                     totalOrders: res.data.totalOrders,

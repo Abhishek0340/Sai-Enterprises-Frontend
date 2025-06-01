@@ -14,7 +14,7 @@ const ForgotPassword = () => {
   const sendOtp = (e) => {
     e.preventDefault();
     axios
-      .post(`https://sai-enterprises-backend.onrender.com/send-reset-otp`, { email })
+      .post(`${import.meta.env.BACKEND_URL}/send-reset-otp`, { email })
       .then((res) => {
         if (res.data.success) {
           setStep(2);
@@ -28,7 +28,7 @@ const ForgotPassword = () => {
   const resetPassword = (e) => {
     e.preventDefault();
     axios
-      .post("https://sai-enterprises-e-commerce-backend.vercel.app/reset-password", { email, otp, newPassword })
+      .post(`${import.meta.env.BACKEND_URL}/reset-password`, { email, otp, newPassword })
       .then((res) => {
         if (res.data.success) {
           alert("Password reset successful!");

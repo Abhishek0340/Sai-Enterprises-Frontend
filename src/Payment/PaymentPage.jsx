@@ -16,7 +16,7 @@ function PaymentPage() {
   useEffect(() => {
     if (amount && userInfo) {
       axios
-        .post(`https://sai-enterprises-backend.onrender.com/create-payment-intent`, {
+        .post(`${import.meta.env.BACKEND_URL}/create-payment-intent`, {
           totalAmount: amount,
           customer_email: userInfo.email, 
           metadata: {

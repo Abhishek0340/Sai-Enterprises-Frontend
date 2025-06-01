@@ -21,7 +21,7 @@ export default function Navbar() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get(`https://sai-enterprises-backend.onrender.com/products?search=${searchText}`);
+        const res = await axios.get(`${import.meta.env.BACKEND_URL}/products?search=${searchText}`);
         setProducts(res.data);
       } catch (error) {
         console.error("Error fetching products:", error);
