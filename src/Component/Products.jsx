@@ -14,8 +14,11 @@ export function Products() {
     useEffect(() => {
         axios.get(`${import.meta.env.BACKEND_URL}/products`)
             .then((res) => {
-                setProducts(res.data);
-                const groupedCategories = res.data.reduce((acc, product) => {
+                // setProducts(res.data);
+                setProducts(Array.isArray(res.data) ? res.data : []);
+
+                // const groupedCategories = res.data.reduce((acc, product) => {
+                    const groupedCategories = (Array.isArray(res.data) ? res.data : []).reduce((acc, product) => {
                     const category = product.category || "General";
                     if (!acc[category]) acc[category] = [];
                     acc[category].push(product);
