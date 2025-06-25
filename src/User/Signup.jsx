@@ -16,7 +16,7 @@ const Signup = () => {
   const handleRegister = (e) => {
     e.preventDefault();
     axios
-      .post(`https://sai-enterprises-backend.onrender.com/register`, { name, email, mobile, password })
+      .post(`http://localhost:5000/register`, { name, email, mobile, password })
       .then((res) => {
         if (res.data.success) {
           
@@ -32,7 +32,7 @@ const Signup = () => {
   const handleOtpVerify = (e) => {
     e.preventDefault();
     axios
-      .post(`https://sai-enterprises-backend.onrender.com/verify-otp`, { email, otp })
+      .post(`http://localhost:5000/verify-otp`, { email, otp })
       .then((res) => {
         if (res.data.success) {
           alert("Signup successful!");

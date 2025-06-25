@@ -20,7 +20,7 @@ function Transactions() {
   const fetchTransactions = () => {
     setLoading(true);
     axios
-      .get(`https://sai-enterprises-backend.onrender.com/stored-transactions`)
+      .get(`http://localhost:5000/stored-transactions`)
       .then((res) => {
         const uniqueTxns = Array.from(
           new Map(res.data.map((txn) => [txn._id, txn])).values()
@@ -41,7 +41,7 @@ function Transactions() {
 
   const handleSave = (id) => {
     axios
-      .put(`https://sai-enterprises-backend.onrender.com/stored-transactions/${id}`, { status: editedStatus })
+      .put(`http://localhost:5000/stored-transactions/${id}`, { status: editedStatus })
       .then(() => {
         setEditId(null);
         fetchTransactions();
@@ -51,7 +51,7 @@ function Transactions() {
 
   const handleDelete = (id) => {
     axios
-      .delete(`https://sai-enterprises-backend.onrender.com/stored-transactions/${id}`)
+      .delete(`http://localhost:5000/stored-transactions/${id}`)
       .then(() => fetchTransactions())
       .catch((err) => console.error("Error deleting transaction:", err));
   };

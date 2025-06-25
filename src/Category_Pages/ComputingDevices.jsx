@@ -17,7 +17,7 @@ export default function ComputingDevices() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get(`https://sai-enterprises-backend.onrender.com/products`);
+        const res = await axios.get(`http://localhost:5000/products`);
 
         const electronicsProducts = res.data.filter(product => product.category === "Computing Devices");
 

@@ -12,14 +12,14 @@ export function Slider() {
       subtitle: "Accessories",
       description:
         "Get the best accessories for your computer and laptop. High-quality, durable, and affordable.",
-      image: "https://i.ibb.co/b5LLTMsp/mobile-category.png",
+      image: "https://i.ibb.co/0zXG47p/mobile-category.png",
     },
     {
       title: "Ipads & Gadgets",
       subtitle: "Latest Technology",
       description:
         "Discover the newest arrivals in smartphones and tech gadgets. Designed for performance and style.",
-      image: "https://i.ibb.co/YFfytdVV/ipad-slide.jpg",
+      image: "https://i.ibb.co/QjmtK0Y3/ipad-slide.jpg",
     },
   ];
 

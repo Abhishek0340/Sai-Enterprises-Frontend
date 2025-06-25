@@ -11,7 +11,7 @@ const Footer = () => {
 
           {/* Logo & About */}
           <div className="text-center">
-            <img src="https://i.ibb.co/bMMP5YzD/main-logo.png" alt="Logo" 
+            <img src="https://i.ibb.co/wFqsZr07/main-logo.png" alt="Logo" 
             className="w-16 block m-auto h-16 mb-4 filter invert brightness-0" />
             <h2 className="text-white text-xl font-semibold">Sai Enterprises</h2>
             <p className="text-sm mt-2">

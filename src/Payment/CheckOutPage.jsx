@@ -48,7 +48,7 @@ export default function CheckOutPage() {
     };
 
     try {
-      const res = await fetch(`https://sai-enterprises-backend.onrender.com/pending-orders`, {
+      const res = await fetch(`http://localhost:5000/pending-orders`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

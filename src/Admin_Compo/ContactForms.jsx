@@ -8,7 +8,7 @@ export default function ContactForm() {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const res = await axios.get(`https://sai-enterprises-backend.onrender.com/contacts`);
+        const res = await axios.get(`http://localhost:5000/contacts`);
         setContacts(res.data);
       } catch (error) {
         console.error("Error fetching contact submissions:", error);

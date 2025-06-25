@@ -21,7 +21,7 @@ export default function Navbar() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get(`https://sai-enterprises-backend.onrender.com/products?search=${searchText}`);
+        const res = await axios.get(`http://localhost:5000/products?search=${searchText}`);
         setProducts(res.data);
       } catch (error) {
         console.error("Error fetching products:", error);
@@ -45,7 +45,7 @@ export default function Navbar() {
       {/* Logo and Title */}
       <div className="flex-1 bg-white flex items-center">
         <Link to="/" className="btn hover:bg-transparent bg-white hover:border-0 text-xl">
-          <img src="https://i.ibb.co/bMMP5YzD/main-logo.png" className="w-10 h-8 mt-2" alt="Logo" />
+          <img src="https://i.ibb.co/wFqsZr07/main-logo.png" className="w-10 h-8 mt-2" alt="Logo" />
           <span className="text-2xl sm:inline hidden">Sai Enterprises</span>
         </Link>
       </div>

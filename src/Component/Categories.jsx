@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 export function Categories() {
     const Category_info = [
-        { label: "Mobile Devices", img_src: "https://i.ibb.co/b5LLTMsp/mobile-category.png", to: '/mobile' },
-        { label: "Computing Devices", img_src: "https://i.ibb.co/DPm1xX3C/computing-category.webp", to: '/computingdevices' },
-        { label: "Appliances", img_src: "https://i.ibb.co/21VrJLNd/appliances-category.png", to: '/appliances' },
-        { label: "Audio Equipments", img_src: "https://i.ibb.co/7xG1zYCJ/audio-category.webp", to: '/audioequipments' },
-        { label: "Accessories", img_src: "https://i.ibb.co/WNpt61P1/accessories-category.jpg", to: '/accessories' },
-        { label: "Smart Home Devices", img_src: "https://i.ibb.co/ZRHwJdjn/smarthome-category.jpg", to: '/smarthomedevices' },
+        { label: "Mobile Devices", img_src: "https://i.ibb.co/0zXG47p/mobile-category.png", to: '/mobile' },
+        { label: "Computing Devices", img_src: "https://i.ibb.co/cKZv15dQ/computing-category.webp", to: '/computingdevices' },
+        { label: "Appliances", img_src: "https://i.ibb.co/FbG4Wx0p/appliances-category.png", to: '/appliances' },
+        { label: "Audio Equipments", img_src: "https://i.ibb.co/Y7zqmRsG/audio-category.webp",  to: '/audioequipments' },
+        { label: "Accessories", img_src: "https://i.ibb.co/cK83RW9T/accessories-category.jpg", to: '/accessories' },
+        { label: "Smart Home Devices", img_src: "https://i.ibb.co/q3nBr4pN/smarthome-category.jpg", to: '/smarthomedevices' },
     ];
 
     return (

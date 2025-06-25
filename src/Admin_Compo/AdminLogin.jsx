@@ -66,11 +66,24 @@ export default function AdminLogin() {
               Login
             </button>
           </form>
-          <hr />
+          <hr className="my-6 border-gray-300"/>
 
-          <p>Create a new Account ? </p>
+          {/*<p>Create a new Account ? </p>
           <Link to='/adminsignup'> Signup</Link>
           
+*/}
+          <div className="text-center text-black">
+            <p>
+              Don't have an account?
+              <Link
+                to="/adminsignup"
+                className="ml-2 font-semibold text-indigo-500 hover:text-indigo-700 transition duration-300 underline"
+              >
+                Sign up
+              </Link>
+            </p>
+          </div>
+
         </div>
       </div>
       

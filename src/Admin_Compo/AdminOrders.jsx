@@ -19,7 +19,7 @@ export default function AdminOrders() {
 
   const fetchOrders = async () => {
     try {
-      const res = await axios.get(`https://sai-enterprises-backend.onrender.com/orders`);
+      const res = await axios.get(`http://localhost:5000/orders`);
       setOrders(res.data);
     } catch (error) {
       console.error("Error fetching orders:", error);
@@ -33,7 +33,7 @@ export default function AdminOrders() {
 
   const handleSaveStatus = async (orderId) => {
     try {
-      await axios.put(`https://sai-enterprises-backend.onrender.com/orders/${orderId}`, {
+      await axios.put(`http://localhost:5000/orders/${orderId}`, {
         status: newStatus,
       });
       setEditingOrderId(null);
@@ -46,7 +46,7 @@ export default function AdminOrders() {
   const handleDelete = async (orderId) => {
     if (!window.confirm("Are you sure you want to delete this order?")) return;
     try {
-      await axios.delete(`https://sai-enterprises-backend.onrender.com/orders/${orderId}`);
+      await axios.delete(`http://localhost:5000/orders/${orderId}`);
       fetchOrders();
     } catch (err) {
       console.error("Error deleting order:", err);
